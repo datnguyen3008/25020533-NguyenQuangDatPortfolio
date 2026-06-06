@@ -1,0 +1,228 @@
+--- m1 baitaplms1.docx
+BÀI TẬP
+Các bước thực hiện :
+Mở File Explorer bằng tổ hợp nút Windows + E hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.
+Truy cập ổ đĩa/thư mục: Ở cột bên trái, nhấp vào This PC, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ D: hoặc E:). Nếu chỉ có ổ C:, hãy vào thư mục Documents.
+Tạo thư mục mới: Nhấp chuột phải vào một khoảng trống -&gt; chọn New -&gt; Folder. Đặt tên thư mục là ThucHanh_hotensinhvien (ví dụ: ThucHanh_NguyenVanA). Nhấn Enter
+Vào thư mục vừa tạo: Nhấp đúp vào thư mục ThucHanh_NguyenVanA.
+Tạo tệp tin văn bản: Nhấp chuột phải vào khoảng trống -&gt; New -&gt; Text Document. Đặt tên là GhiChu.txt. Nhấn Enter.
+Đổi tên tệp tin: Nhấp chuột phải vào tệp GhiChu.txt -&gt; chọn Rename. Đổi tên thành GhiChuQuanTrong.txt. Nhấn Enter.
+Tạo thư mục con: Trong thư mục ThucHanh_NguyenVanA, nhấp chuột phải -&gt; New -&gt; Folder. Đặt tên là TaiLieu.
+8.     Sao chép tệp tin (Copy &amp; Paste):
+Nhấp chuột phải vào tệp GhiChuQuanTrong.txt -&gt; chọn Copy (hoặc chọn tệp rồi nhấn Ctrl + C).
+Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống bên trong -&gt; chọn Paste (hoặc nhấn Ctrl + V). Bây giờ bạn có một bản sao của tệp trong thư mục TaiLieu.
+9.     Di chuyển tệp tin (Cut &amp; Paste):
+Quay lại thư mục ThucHanh_NguyenVanA. Tạo một tệp mới tên là DiChuyen.txt.
+Nhấp chuột phải vào tệp DiChuyen.txt -&gt; chọn Cut (hoặc chọn tệp rồi nhấn Ctrl + X).
+Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống -&gt; chọn Paste (hoặc nhấn Ctrl + V). Tệp gốc đã biến mất khỏi vị trí cũ và chỉ còn ở vị trí mới.
+10. Xóa tệp tin: Trong thư mục TaiLieu, nhấp chuột phải vào tệp GhiChuQuanTrong.txt -&gt; chọn Delete. Tệp sẽ được chuyển vào Thùng rác (Recycle Bin).
+11. Xóa vĩnh viễn: Chọn tệp DiChuyen.txt, nhấn giữ phím Shift và nhấn phím Delete. Một cảnh báo sẽ hiện ra. Nếu đồng ý, tệp sẽ bị xóa vĩnh viễn mà không qua Thùng rác.
+12. Khôi phục từ Thùng rác (Tùy chọn): Tìm biểu tượng Recycle Bin trên màn hình nền, nhấp đúp để mở. Tìm tệp GhiChuQuanTrong.txt đã xóa, nhấp chuột phải vào nó và chọn Restore. Tệp sẽ quay trở lại vị trí ban đầu.
+
+--- m2 baitaplms2.docx
+BÁO CÁO: TÌM KIẾM VÀ ĐÁNH GIÁ TÀI LIỆU HỌC THUẬT
+Chủ đề: Kiến trúc RISC-V và vấn đề bảo mật phần cứng cho hệ sinh thái IoT
+Người thực hiện: Nguyễn Quang Đạt
+Ngành: Kỹ thuật Máy tính.
+1. Lý do chọn chủ đề và mục tiêu tìm kiếm
+Trong các tiết học về Kiến trúc máy tính, em thực sự bị thu hút bởi RISC-V – một tập lệnh mở đang đe dọa vị thế của ARM và x86. Tuy nhiên, khi đọc tin tức, em thấy nhiều lo ngại về việc &quot;mở&quot; đồng nghĩa với việc dễ bị tấn công phần cứng (Hardware Trojans, Side-channel attacks).
+Mục tiêu của em trong bài tập này là:
+Tìm xem các giáo sư đầu ngành đang giải quyết bài toán bảo mật trên chip RISC-V như thế nào.
+Phân biệt giữa &quot;quảng cáo&quot; của các công ty bán chip và nghiên cứu thực tế tại các phòng thí nghiệm.
+2. Nhật ký quá trình tìm kiếm (My Search Journey)
+Thú thật là lúc đầu em chỉ lên Google gõ &quot;RISC-V security&quot;, nhưng kết quả trả về đa số là các bài báo PR từ các công ty như SiFive hay Andes Technology. Để lấy được dữ liệu học thuật &quot;xịn&quot;, em phải :
+Truy cập IEEE Xplore &amp; ACM Digital Library: Đây là &quot;mỏ vàng&quot; cho dân Kỹ thuật máy tính. Em dùng từ khóa: (RISC-V OR &quot;open-source ISA&quot;) AND (Security OR &quot;Side-channel attack&quot;).
+Google Scholar: Em dùng để check xem bài báo nào được trích dẫn nhiều nhất (để tìm các bài &quot;kinh điển&quot;).
+Lọc tài liệu: Em ưu tiên các bài viết từ năm 2021 trở lại đây vì công nghệ chip thay đổi quá nhanh, tài liệu năm 2015 coi như đã lỗi thời trong ngành này.
+3. Bảng tổng hợp và Đánh giá 10 nguồn tài liệu
+4. Phân tích và Phản hồi cá nhân
+Sau khi đọc và so sánh, em rút ra một nhận xét khá thú vị: Trong ngành Kỹ thuật Máy tính, uy tín của tác giả (Authority) cực kỳ quan trọng. Khi em thấy tên David Patterson trên một bài báo, em gần như tin tưởng 90% vì ông ấy là người định nghĩa ra khái niệm RISC.
+Tuy nhiên, em cũng nhận thấy một kẽ hở: Các bài báo học thuật thường thực hiện trên môi trường giả lập (simulation) hoặc FPGA. Khi đưa vào sản xuất đại trà (ASIC), các thách thức về nhiệt độ, điện năng tiêu thụ có thể làm nảy sinh các lỗ hổng bảo mật mới mà các bài báo hiện tại chưa phủ hết được.
+Kinh nghiệm cho em là: Đừng bao giờ chỉ đọc Spec của hãng sản xuất chip (nguồn số 10), mà phải tìm các bài báo phản biện (nguồn số 2, 6) để thấy được những &quot;góc tối&quot; của phần cứng.
+5. Danh mục tài liệu tham khảo (Chuẩn Harvard)
+Hennessy, J.L. and Patterson, D.A. (2019) Computer architecture: a quantitative approach. 6th edn. Cambridge: Morgan Kaufmann.
+Koteshwara, A. et al. (2022) &#x27;A Comprehensive Survey of RISC-V Security: Challenges and Opportunities&#x27;, IEEE Access, 10, pp. 10540-10565.
+Zhang, X. (2021) &#x27;Hardware Trojan detection in RISC-V cores using machine learning&#x27;, Journal of Hardware and Systems Security, 5(2), pp. 112-125.
+
+--- m3 btlms3.docx
+BÁO CÁO THỰC HÀNH: PHÁT TRIỂN KỸ NĂNG VIẾT PROMPT HIỆU QUẢ TRONG HỌC TẬP
+I.Lựa chọn và phân tích tác vụ học tập
+Để đánh giá toàn diện khả năng của các mô hình ngôn ngữ lớn (LLM), báo cáo này lựa chọn 3 tác vụ học tập tiêu biểu, trải dài từ việc xử lý thông tin, thấu hiểu khái niệm đến kiểm tra đánh giá:
+1. Tác vụ 1: Tóm tắt tài liệu học thuật (Chủ đề: Phương pháp quản lý thời gian Pomodoro)
+Mục tiêu: Hệ thống hóa một tài liệu kỹ năng mềm dài dòng thành một bộ nguyên tắc hành động ngắn gọn, trực quan. Yêu cầu AI phải bóc tách được &quot;phần xác&quot; (câu chữ rườm rà) để giữ lại &quot;phần hồn&quot; (công thức cốt lõi), giúp người học có thể ghi nhớ và áp dụng ngay lập tức mà không mất thời gian đọc lại.
+Thách thức: Thay vì chắt lọc tinh hoa, LLM thường có xu hướng diễn đạt lại nguyên văn nhưng ở dạng rút gọn, tạo ra một văn bản thiếu điểm nhấn. Đặc biệt, AI dễ bỏ sót các &quot;lưu ý thực hành&quot; quan trọng, khiến người đọc nắm được lý thuyết nhưng lại thất bại khi bắt tay vào thực hành thực tế.
+2. Tác vụ 2: Giải thích một khái niệm phức tạp (Chủ đề: Khái niệm &quot;Lạm phát&quot; trong môn Kinh tế Vĩ mô)
+Mục tiêu: &quot;Bình dân hóa&quot; một khái niệm kinh tế học vĩ mô chuyên sâu, kết nối kiến thức hàn lâm trên giảng đường với những trải nghiệm tài chính cá nhân quen thuộc của sinh viên (như tiền tiêu vặt, giá cả leo thang).
+Thách thức: LLM rất dễ lạm dụng các thuật ngữ chuyên ngành (như &quot;cung tiền&quot;, &quot;rổ hàng hóa&quot;, &quot;CPI&quot;) để giải thích cho một khái niệm vốn đã khó hiểu. Điều này dẫn đến tình trạng &quot;giải thích một khái niệm khó bằng những khái niệm khó khác&quot;, gây quá tải nhận thức cho người học không thuộc chuyên ngành kinh tế.
+3. Tác vụ 3: Tạo bộ câu hỏi ôn tập vận dụng (Chủ đề: Quy luật Lượng - Chất trong Triết học Mác - Lênin)
+Mục tiêu: Thiết kế một công cụ đánh giá năng lực tư duy phản biện, buộc người học phải thoát khỏi vùng an toàn của việc &quot;học thuộc lòng&quot; để áp dụng triết học vào việc giải quyết và nhìn nhận các vấn đề trong đời sống sinh viên.
+Thách thức: AI thường sinh ra các câu hỏi trắc nghiệm mang tính &quot;nhận biết bề mặt&quot; (ví dụ: hỏi lại định nghĩa, năm ra đời) hoặc đưa ra các tình huống giả định quá gượng ép, thiếu tính logic thực tiễn, làm giảm giá trị của việc dùng AI làm công cụ tự kiểm tra đánh giá.
+II. Xây dựng các phiên bản Prompt
+Tác vụ 1: Tóm tắt tài liệu học thuật
+Prompt cơ bản: &quot;Tóm tắt tài liệu về phương pháp học tập Pomodoro sau đây: [Dán tài liệu]&quot;
+Prompt cải tiến: &quot;Hãy đọc tài liệu về phương pháp Pomodoro dưới đây và tóm tắt lại. Liệt kê các bước thực hiện theo thứ tự và đánh giá lợi ích của phương pháp này đối với sự tập trung.&quot;
+Prompt nâng cao (Áp dụng Role-prompting + Constraint + Format): &gt; &quot;Đóng vai một chuyên gia đào tạo kỹ năng mềm cho sinh viên (Role). Hãy tóm tắt tài liệu dưới đây thành một bản hướng dẫn hành động (Audience). Yêu cầu cấu trúc (Format):
+Mở đầu bằng đúng 1 câu triết lý cốt lõi.
+Sử dụng Bullet points có kèm biểu tượng (icon) để liệt kê quy trình thực hành.
+In đậm các lỗi sai thường gặp cần tránh. Giới hạn độ dài: Không quá 200 chữ (Constraint). Tài liệu: [Dán tài liệu]&quot;
+Tác vụ 2: Giải thích một khái niệm phức tạp
+Prompt cơ bản: &quot;Giải thích lạm phát trong kinh tế vĩ mô là gì.&quot;
+Prompt cải tiến: &quot;Hãy giải thích chi tiết về khái niệm lạm phát. Nêu các nguyên nhân chính gây ra lạm phát và cung cấp một ví dụ minh họa về sự thay đổi giá cả qua các năm.&quot;
+Prompt nâng cao (Áp dụng Role-prompting + Analogy + Chain-of-Thought): &gt; &quot;Đóng vai một gia sư Kinh tế hóm hỉnh, giỏi truyền đạt (Role). Hãy giải thích khái niệm &#x27;Lạm phát&#x27; cho một sinh viên IT không biết gì về kinh tế. Hãy tư duy và trình bày theo các bước sau (Chain-of-Thought):
+Định nghĩa lạm phát bằng 1 câu nói cửa miệng thân thuộc.
+Sử dụng phương pháp liên tưởng (Analogy) qua việc so sánh giá một ly trà sữa trân châu thay đổi từ năm 2019 đến 2024 để minh họa cho sự mất giá của tiền.
+Rút ra lời khuyên về cách quản lý chi tiêu cho sinh viên khi lạm phát tăng. Sử dụng in đậm cho các từ khóa quan trọng.&quot;
+Tác vụ 3: Tạo bộ câu hỏi ôn tập
+Prompt cơ bản: &quot;Tạo câu hỏi trắc nghiệm ôn thi phần Quy luật Lượng - Chất môn Triết học.&quot;
+Prompt cải tiến: &quot;Tạo 5 câu hỏi trắc nghiệm (có 4 đáp án A, B, C, D) về Quy luật Lượng - Chất. Cung cấp đáp án và giải thích ngắn gọn ở cuối.&quot;
+Prompt nâng cao (Áp dụng Role-prompting + Few-shot prompting + Task Framing): &gt; &quot;Đóng vai một giảng viên Triết học uyên bác (Role). Hãy tạo ra 3 câu hỏi trắc nghiệm vận dụng cao về &#x27;Quy luật chuyển hóa từ những sự thay đổi về lượng thành những sự thay đổi về chất&#x27;.
+Yêu cầu: Không hỏi định nghĩa lý thuyết suông. Mỗi câu hỏi phải đưa ra một TÌNH HUỐNG thực tế về sự nỗ lực học tập hoặc hoạt động ngoại khóa của sinh viên. Yêu cầu người học xác định đâu là &#x27;Lượng&#x27;, &#x27;Chất&#x27;, &#x27;Độ&#x27; hoặc &#x27;Bước nhảy&#x27;. Phải có giải thích chi tiết tại sao đáp án đó đúng và tại sao các phương án khác sai. Ví dụ tham khảo (Few-shot): [Câu hỏi: Sinh viên A tích lũy đủ 130 tín chỉ và được cấp bằng Cử nhân. Việc nhận bằng được coi là gì? -&gt; Đáp án: Bước nhảy].&quot;
+III. Thử nghiệm và so sánh kết quả
+IV. Phân tích lý do tại sao một số prompt hiệu quả hơn các prompt khác
+Một prompt (câu lệnh) hiệu quả tạo ra sự khác biệt lớn về chất lượng đầu ra vì nó giao tiếp đúng cách với &quot;tư duy&quot; của mô hình ngôn ngữ AI. Dưới đây là những lý do chính khiến một prompt vượt trội hơn phần còn lại:
+Độ chi tiết và giới hạn rõ ràng (Specificity &amp; Constraints): Các prompt kém thường quá chung chung (ví dụ: &quot;Viết bài về AI&quot;), dẫn đến câu trả lời lan man. Prompt hiệu quả vạch ra ranh giới rõ ràng về chủ đề, độ dài, và những gì không được viết (ví dụ: &quot;Không sử dụng thuật ngữ học thuật phức tạp&quot;).
+Cung cấp đủ Ngữ cảnh (Context): AI không biết bạn là ai và bạn định dùng câu trả lời để làm gì. Khi bạn thêm ngữ cảnh (&quot;Tôi đang viết email xin việc cho vị trí Marketing...&quot;), AI sẽ tự động thu hẹp phạm vi từ vựng, văn phong và kiến thức để phù hợp nhất với bối cảnh đó.
+Có ví dụ mẫu (Few-Shot Prompting): Thay vì chỉ mô tả, các prompt hiệu quả thường đi kèm 1-2 ví dụ minh họa về kết quả mong muốn. Điều này giúp AI &quot;bắt chước&quot; được định dạng và giọng điệu một cách chính xác mà không phải tự đoán.
+Đóng vai (Role-playing/Persona): Việc gán cho AI một nhân dạng (&quot;Hãy đóng vai một chuyên gia SEO với 10 năm kinh nghiệm...&quot;) giúp thiết lập sẵn một mức độ chuyên môn, thái độ và góc nhìn cụ thể, làm cho câu trả lời sâu sắc và có tính chuyên ngành cao hơn.
+Cấu trúc mạch lạc: Prompt hiệu quả thường được trình bày sạch sẽ, phân tách các phần (Yêu cầu, Dữ liệu, Hướng dẫn) bằng dấu gạch ngang (---), dấu ngoặc kép hoặc các thẻ đánh dấu, giúp AI dễ dàng bóc tách thông tin để xử lý.
+V. Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả
+Dựa trên phân tích ở trên, bạn có thể áp dụng các nguyên tắc và mẹo thực chiến sau để luôn làm chủ được kết quả mà AI tạo ra:
+Nguyên tắc cốt lõi:
+Rõ ràng hơn là thông minh: Đừng cố dùng từ ngữ ẩn dụ hay câu cú phức tạp. Hãy đưa ra mệnh lệnh trực diện, dùng động từ mạnh (Viết, Tóm tắt, Phân tích, Lập bảng).
+Quy trình lặp lại (Iterative Process): Hiếm khi bạn có một prompt hoàn hảo ngay lần đầu. Hãy bắt đầu với một prompt cơ bản, xem kết quả, sau đó tinh chỉnh và thêm các điều kiện để AI làm tốt hơn ở lần sau.
+Các mẹo (Tips) thực chiến:
+Sử dụng công thức &quot;CREATE&quot; (hoặc các framework tương tự): Để không bỏ sót ý, hãy cấu trúc prompt theo các yếu tố:
+Context (Ngữ cảnh): Tình huống hiện tại là gì?
+Request (Yêu cầu): Nhiệm vụ chính là gì?
+Explanation (Giải thích): Các chi tiết bổ sung.
+Audience (Độc giả): Ai là người tiếp nhận nội dung này?
+Tone (Giọng văn): Hài hước, chuyên nghiệp, hay đồng cảm?
+Extras (Định dạng): Trình bày dưới dạng bảng, Markdown, hay gạch đầu dòng?
+Yêu cầu &quot;Suy nghĩ từng bước&quot; (Chain of Thought): Đối với các bài toán logic, tính toán hoặc xử lý vấn đề nhiều bước, hãy thêm câu: &quot;Hãy suy nghĩ từng bước một&quot; hoặc &quot;Phân tích vấn đề này ra trước khi đưa ra kết luận&quot;. Điều này giảm thiểu đáng kể tỷ lệ AI trả lời sai do &quot;nhảy cóc&quot; quá trình suy luận.
+Tận dụng các ký tự phân cách: Nếu bạn cần AI xử lý một đoạn văn bản dài, hãy đặt đoạn văn bản đó trong [ ], &lt; &gt; hoặc &quot;&quot;&quot; &quot;&quot;&quot; và hướng dẫn AI: &quot;Hãy tóm tắt đoạn văn bản nằm trong dấu ngoặc kép dưới đây&quot;.
+Cung cấp &quot;lối thoát&quot; để tránh bịa thông tin: Để tránh tình trạng Hallucination (AI tựa bịa kiến thức), hãy chốt lại bằng câu: &quot;Nếu bạn không tìm thấy thông tin trong dữ liệu tôi cung cấp, hãy trả lời &#x27;Tôi không biết&#x27;, tuyệt đối không tự bịa thêm thông tin&quot;.
+
+--- m4 btlms4.docx
+BÁO CÁO CÁ NHÂN: KỸ NĂNG QUẢN LÝ DỰ ÁN VÀ CỘNG TÁC TRỰC TUYẾN
+Họ và tên: Nguyễn Quang Đạt
+Tên dự án thực hiện: Nghiên cứu AI trong lĩnh vực ngoại ngữ
+Mục tiêu cá nhân
+Mục tiêu cốt lõi của em trong dự án này là thành thạo các công cụ cơ bản để quản lý công việc cá nhân một cách khoa học, phối hợp nhịp nhàng với các thành viên trong nhóm và đảm bảo tiến độ dự án không bị gián đoạn. Báo cáo này sẽ tập trung phân tích trải nghiệm và vai trò cá nhân của em trong việc ứng dụng các công cụ số vào thực tiễn dự án.
+Lựa chọn bộ công cụ
+Để đáp ứng yêu cầu của dự án, em đã nghiên cứu và lựa chọn 3 công cụ đơn giản nhưng tối ưu nhất cho quy trình làm việc:
+Công cụ quản lý công việc: Trello (Sử dụng sơ đồ thẻ công việc để trực quan hóa tiến độ).
+Công cụ soạn thảo &amp; Lưu trữ: Google Docs và Google Drive (Hỗ trợ làm việc chung trên một văn bản theo thời gian thực và lưu trữ đám mây khoa học).
+Công cụ giao tiếp nhóm: Zalo (Tối ưu cho việc trao đổi thông tin nhanh chóng và gửi tệp tin đa phương tiện).
+NHẬT KÝ THỰC HIỆN VÀ MINH CHỨNG CHI TIẾT
+1. Tự quản lý danh sách nhiệm vụ trên Trello
+Cách thức thực hiện: Em sử dụng Trello để chia nhỏ dự án thành các công việc cụ thể. Em tự tạo các thẻ (cards) chi tiết cho 2 nhiệm vụ chính mà mình phụ trách là: (1) Tìm kiếm, tổng hợp các công cụ AI hỗ trợ ngoại ngữ và (2) Rà soát lỗi nội dung, kiểm tra đạo văn. Em cập nhật tiến độ (checklist) liên tục từ trạng thái &quot;Đang làm&quot; (Doing) sang &quot;Đã hoàn thành&quot; (Done).
+Đánh giá hiệu quả: Việc hệ thống hóa này giúp em tự quản lý quỹ thời gian cá nhân chủ động. Đặc biệt với nhiệm vụ rà soát nội dung vốn phụ thuộc vào tiến độ viết bài của các bạn khác, Trello giúp em theo dõi chính xác khi nào một phần việc của nhóm đã xong để em bắt tay vào khâu kiểm tra mà không bị chậm trễ deadline.
+2. Tổ chức lưu trữ, soạn thảo và rà soát nội dung trên Google Docs
+Cách thức thực hiện: * Đối với nhiệm vụ Tìm kiếm công cụ, em lập các bảng so sánh trực tiếp trên Google Docs và đính kèm link tài liệu tham khảo để nhóm cùng đọc.
+Đối với nhiệm vụ Rà soát nội dung và đạo văn, Google Docs phát huy vai trò cực kỳ quan trọng. Thay vì tự ý xóa hay sửa bài của thành viên khác, em sử dụng công cụ kiểm tra đạo văn bên ngoài, sau đó quay lại Google Docs dùng tính năng Nhận xét (Comment) và Đề xuất chỉnh sửa (Suggesting). Em bôi đen các đoạn có tỷ lệ trùng lặp cao hoặc diễn đạt lủng củng, sau đó để lại bình luận yêu cầu tác giả tự viết lại.
+Cuối cùng, em tổ chức lưu trữ file báo cáo gọn gàng trong thư mục chung trên Google Drive để đảm bảo an toàn dữ liệu.
+Đánh giá hiệu quả: Nội dung bài làm luôn được lưu tự động. Tính năng nhận xét và lịch sử chỉnh sửa (Version History) giúp việc rà soát đạo văn trở nên minh bạch; cả nhóm có thể theo dõi được những điểm em đã góp ý và tiến trình sửa lỗi theo thời gian thực mà không sợ mất dữ liệu cũ.
+3. Tương tác và điều phối công việc chủ động trên Zalo
+Cách thức thực hiện: Zalo được lựa chọn làm kênh liên lạc chính để em phản hồi các vấn đề phát sinh. Trong quá trình rà soát nội dung, nếu phát hiện cấu trúc bài chưa hợp lý hoặc tỷ lệ đạo văn quá cao, em sẽ nhắn tin vào nhóm để giục các bạn sửa lỗi nội dung kịp thời gian, và ghim các link công cụ AI mà em tìm được lên đầu nhóm để mọi người dễ truy cập.
+Đánh giá hiệu quả: Quá trình giao tiếp xuyên suốt giúp giảm thiểu thời gian họp trực tiếp. Các vấn đề về lỗi logic hay trùng lặp ý tưởng được giải quyết nhanh chóng trong vòng 5-10 phút thông qua tin nhắn.
+IV. PHÂN TÍCH HIỆU QUẢ VÀ THÁCH THỨC
+1. Phân tích hiệu quả đối với cá nhân Việc áp dụng đồng bộ 3 công cụ (Trello, Google Workspace, Zalo) đã giúp em hoàn thành vai trò &quot;người kiểm duyệt&quot; của dự án. Trước đây, việc rà soát lỗi của nhiều người cùng lúc thường rất dễ gây nhầm lẫn hoặc mất lòng các thành viên. Nhưng hiện tại, nhờ tính minh bạch của Google Docs và sự rõ ràng của Trello, em có thể góp ý một cách chuyên nghiệp, khách quan dựa trên bằng chứng số (lịch sử chỉnh sửa, comment) giúp khối lượng công việc được xử lý nhanh gọn, báo cáo cuối cùng đạt chuẩn chất lượng không bị đạo văn.
+2. Thách thức gặp phải và giải pháp khắc phục
+Vấn đề phát sinh: Trong quá trình làm việc, lượng tin nhắn thảo luận trên Zalo đôi khi bị trôi quá nhanh. Hơn nữa, khi em để lại bình luận sửa lỗi trên Google Docs, một số thành viên không để ý tin nhắn thông báo nên không vào sửa bài.
+Cách giải quyết của em: Nhận thức được rủi ro chậm trễ này, em đã thiết lập thói quen: ngay sau khi rà soát và comment lỗi trên Docs, em sẽ qua nhóm Zalo dùng lệnh &quot;Mention&quot; (@Tên người nhận) báo cáo trực tiếp để yêu cầu họ vào kiểm tra gấp. Cuối mỗi ngày, em đối chiếu lại checklist rà soát trên Trello xem các lỗi đã được các bạn khắc phục xong chưa nhằm đảm bảo chất lượng bài viết trước ngày nộp
+V. KẾT LUẬN
+Qua quá trình 1 tuần thực hiện dự án, em rút ra bài học rằng: dù sử dụng các nền tảng quen thuộc như Zalo hay Google Docs, cốt lõi của sự thành công vẫn nằm ở tư duy tổ chức khoa học. Với nhiệm vụ đặc thù là tìm kiếm dữ liệu và kiểm soát chất lượng nội dung (đạo văn), các công cụ cộng tác trực tuyến đã hỗ trợ em làm việc minh bạch, tiết kiệm thời gian và gắn kết tốt với nhóm. Em tự đánh giá bản thân đã hoàn thành đúng và đủ trách nhiệm của mình, tích lũy được nhiều kinh nghiệm quý báu về quản lý chất lượng dự án số trong thực tế.
+
+--- m5 btlms5.docx
+Họ và tên: Nguyễn Quang Đạt
+Bài tập 2: Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung
+Tiêu đề chính: Ứng dụng của Hệ thống Nhúng IoT (Internet of Things) trong cuộc sống hiện đại
+Khái niệm
+Hệ thống nhúng: Là một hệ thống máy tính chuyên dụng (gồm cả phần cứng và phần mềm) được nhúng vào trong một thiết bị lớn hơn để thực hiện một chức năng cụ thể.
+IoT (Internet vạn vật): Khả năng kết nối Internet của các thiết bị này để thu thập, chia sẻ dữ liệu và tự động hóa các tác vụ mà không cần con người can thiệp trực tiếp.
+Các ứng dụng
+Nhà thông minh (Smarthome)
+Điều khiển ánh sáng, rèm cửa, điều hòa nhiệt độ từ xa thông qua smartphone hoặc giọng nói (trợ lý ảo).
+Hệ thống an ninh thông minh: Camera nhận diện khuôn mặt, cảm biến chuyển động gửi cảnh báo chống trộm ngay lập tức.
+Thiết bị gia dụng: Tủ lạnh tự động nhắc nhở khi hết thực phẩm.
+2.Nông nghiệp thông minh(Smart Agriculture)
+Hệ thống cảm biến nhúng dưới đất: Đo độ ẩm, nhiệt độ, độ pH của đất để tự động kích hoạt hệ thống tưới tiêu/bón phân.
+Tối ưu hóa năng suất, tiết kiệm nước và giảm thiểu tác động xấu đến môi trường
+IV.Kết luận
+Hệ thống nhúng IoT không chỉ mang lại sự tiện nghi mà còn giúp tiết kiệm năng lượng, bảo vệ môi trường và nâng cao chất lượng sống.
+Tương lai: Sự kết hợp giữa AI và IoT (AIoT) sẽ tạo ra các thiết bị không chỉ biết &quot;thu thập dữ liệu&quot; mà còn biết &quot;tự suy nghĩ&quot; và ra quyết định.
+Bên cạnh việc sử dụng AI để tạo ảnh, tìm kiếm nội dung liên quan đến kiến thức, em con sử dụng Canva như công cụ để thiết kế nội dung trình bày . Em tiếp thu những kiến thức mà Gemini đưa ra một cách chọn lọc rồi thay đổi và tinh chỉnh sao cho phù hợp với bài của mình , ngắn gọn mà đầy đủ nội dung. Đối với Canva ngoài việc sử dụng template đã có , em có chèn ảnh mà mình đã tạo ra và sử dụng các đồ họa động có ở trên Canva để trang trí bản thiết kế theo phong cách của mình
+BẢNG SO SÁNH
+Vai trò của AI:
+Những phần AI làm tốt: Tốc độ xử lý thông tin và khả năng khơi gợi ý tưởng là vượt trội. AI giúp hiện thực hóa các khái niệm khô khan về &quot;Hệ thống nhúng&quot; thành hình ảnh trực quan, giúp người xem dễ tiếp cận hơn.
+Hạn chế: AI vẫn có thể đưa ra các thông tin chưa hoàn toàn chính xác về mặt kỹ thuật chuyên sâu nếu không được kiểm chứng. Ngoài ra, hình ảnh tạo ra đôi khi còn mang tính &quot;viễn tưởng&quot;, chưa sát với thực tế tại địa phương.
+Thay đổi quy trình sáng tạo: Quy trình đã chuyển từ &quot;Thực hiện thủ công từng bước&quot; sang &quot;Điều phối và Giám sát AI&quot;. Người làm chủ không còn mất thời gian cho các tác vụ lặp lại mà tập trung vào việc kiểm soát chất lượng và tính logic của nội dung.
+Vấn đề đạo đức: Cần minh bạch về việc sử dụng AI trong học tập. Việc sử dụng hình ảnh AI tạo ra cần được chú thích rõ ràng để tôn trọng tính nguyên bản và tránh hiểu lầm về bản quyền.
+
+--- m6 btlms6.docx
+Bài tập
+Họ và tên Nguyễn Quang Đạt – 25020533
+I.Mục tiêu: Phát triển kỹ năng sử dụng AI có trách nhiệm và đạo đức trong học tập và nghiên cứu.
+Bối cảnh hiện tại :
+Là 1 tân sinh viên – chứng kiến một trong những giai đoạn chuyển mình mạnh mẽ nhất của giáo dục toàn cầu dưới sự bùng nổ của Trí tuệ nhân tạo (AI). Chỉ trong một thời gian ngắn, những cái tên như ChatGPT, Gemini, hay Claude đã không còn là các khái niệm công nghệ xa lạ trên báo chí, mà đã trở thành những &quot;trợ lý ảo&quot; quen thuộc xuất hiện trên màn hình máy tính của mỗi sinh viên sau mỗi giờ lên lớp. Từ việc tìm kiếm, tóm tắt tài liệu, giải thích các thuật toán phức tạp, hỗ trợ debug những dòng code đầu tay cho đến việc gợi ý ý tưởng thuyết trình, các mô hình ngôn ngữ lớn này đang tái định hình hoàn toàn cách thức chúng sinh viên như em  tiếp cận tri thức.
+Tuy nhiên, sự tiện lợi của AI cũng đặt ra những thách thức chưa từng có về tính liêm chính học thuật. Nếu quá lạm dụng và biến AI thành công cụ &quot;làm bài hộ&quot;, sinh viên sẽ rất dễ rơi vào cái bẫy của sự lười tư duy, làm xói mòn đi năng lực tự học, kỹ năng lập luận và khả năng sáng tạo – những giá trị cốt lõi tạo nên một cá nhân mang giá trị cho xã hội
+Đứng trước ranh giới mong manh giữa &quot;hỗ trợ học tập hợp lý&quot; và &quot;gian lận học thuật&quot;, việc nhận thức sâu sắc và xây dựng một thái độ ứng xử có trách nhiệm với AI là điều vô cùng cấp thiết. Đó chính là lý do em thực hiện bài báo cáo: &quot;Sử dụng AI có trách nhiệm trong học tập và nghiên cứu&quot; nhằm nghiêm túc nhìn nhận lại chính sách của nhà trường, phân tích các khía cạnh đạo đức liên quan, từ đó tự thiết lập cho bản thân một bộ nguyên tắc sử dụng công nghệ một cách thông minh, văn minh và liêm chính.
+II. Yêu cầu
+1.1. Định hướng và quy định hiện hành của ĐHQGHN và Trường Đại học Công nghệ (VNU-UET)
+Trong chiến lược phát triển giai đoạn mới, Đại học Quốc gia Hà Nội (ĐHQGHN) luôn khẳng định vị thế tiên phong trong công cuộc chuyển đổi số giáo dục. Điều này được thể hiện rõ nét nhất qua Quyết định số 3499/QĐ-ĐHQGHN, chính thức đưa học phần &quot;Công nghệ số và ứng dụng trí tuệ nhân tạo&quot; (mã học phần: VNU1001) trở thành môn học bắt buộc cho toàn bộ sinh viên. Định hướng này cho thấy góc nhìn cởi mở và chủ động của ĐHQGHN: không né tránh, không cấm đoán, mà chủ động trang bị &quot;năng lực số&quot; cho sinh viên ngay từ năm thứ nhất để thích ứng với kỷ nguyên công nghiệp 4.0.
+Tuy nhiên, song song với việc khuyến khích ứng dụng công nghệ, ĐHQGHN và Trường Đại học Công nghệ (VNU-UET) cũng đặt ra những ranh giới pháp lý và đạo đức vô cùng nghiêm ngặt thông qua Quy chế đào tạo đại học và Quy định về Liêm chính học thuật. Các văn bản này nhấn mạnh ba nguyên tắc cốt lõi:
+AI không có tư cách tác giả: Mọi sản phẩm học thuật (bài tập lớn, mã nguồn lập trình, báo cáo nghiên cứu, khóa luận) phải là kết quả từ quá trình lao động trí tuệ của chính sinh viên. AI chỉ được coi là một công cụ hỗ trợ kỹ thuật kỹ năng, không thể đứng tên hoặc thay thế vai trò chủ thể sáng tạo của con người.
+Trách nhiệm giải trình cao nhất: Sinh viên khi nộp bất kỳ sản phẩm nào lên hệ thống học tập trực tuyến (LMS) phải chịu 100% trách nhiệm về tính chính xác, tính xác thực của nội dung. Nếu AI đưa ra thông tin sai lệch (hallucination) hoặc mã nguồn bị lỗi, sinh viên không thể lấy lý do &quot;do AI làm&quot; để biện minh.
+Nghiêm cấm đạo văn và gian lận kỹ thuật số: Việc sao chép nguyên văn câu lệnh hoặc sao chép toàn bộ kết quả đầu ra của AI rồi biến nó thành bài làm của mình mà không khai báo bị khép vào hành vi gian lận học thuật, đối mặt với các hình thức kỷ luật từ đình chỉ học phần đến hủy bỏ kết quả học tập tùy theo mức độ vi phạm.
+1.2. So sánh đối chiếu chính sách giữa ĐHQGHN (VNU) và Đại học Bách khoa Hà Nội (HUST)
+Nhận xét: Qua bảng so sánh trên, có thể thấy cả hai đại học lớn đều có một điểm chung cốt lõi: Ủng hộ công nghệ nhưng không thỏa hiệp với sự gian lận. Điểm khác biệt nằm ở phương thức triển khai. ĐHQGHN lựa chọn cách tiếp cận mang tính &quot;định hình tư duy&quot; từ sớm bằng một học phần bắt buộc có hệ thống, giúp sinh viên mọi khối ngành (từ tự nhiên đến xã hội) có nền tảng đồng đều. Trong khi đó, HUST tập trung mạnh vào việc kiểm soát đầu ra của các sản phẩm kỹ thuật và nghiên cứu chuyên sâu, phù hợp với mô hình đại học bách khoa thuần kỹ thuật.
+2. QUÁ TRÌNH THỰC HIỆN NHIỆM VỤ HỌC TẬP VỚI SỰ HỖ TRỢ CỦA AI
+2.1. Lựa chọn nhiệm vụ học tập
+Em lựa chọn nhiệm vụ: &quot;Xây dựng đề cương tóm tắt lý thuyết và hệ thống hóa các dạng bài tập trọng tâm chương &#x27;Chuỗi số và Chuỗi lũy thừa&#x27; để phục vụ ôn thi cuối kỳ môn Giải tích 1&quot;.
+Mục tiêu nhiệm vụ: Tổng hợp các định lý, công thức cốt lõi (Tiêu chuẩn hội tụ D&#x27;Alembert, Cauchy, Tiêu chuẩn tích phân...) và phân loại các bước giải bài tập tìm bán kính hội tụ của chuỗi lũy thừa thành một tài liệu học tập ngắn gọn (Cheat Sheet).
+-	Lý do chọn AI hỗ trợ: Chương Chuỗi số có lượng định lý rất nặng, điều kiện áp dụng các tiêu chuẩn dễ bị nhầm lẫn (ví dụ: chuỗi số dương và chuỗi có dấu bất kỳ). Việc dùng AI giúp em nhanh chóng phân loại, cấu trúc lại kiến thức một cách mạch lạc và tạo ra các ví dụ minh họa trực quan cho từng dạng toán.
+2.2  Các prompt em sử dụng
+Đầu ra của AI
+Nhận xét  Kết quả trả về của AI: AI đã trả về một cấu trúc tóm tắt khá chi tiết. Ví dụ, với tiêu chuẩn D&#x27;Alembert, AI đưa ra công thức tính giới hạn
+và đưa ra kết luận: nếu D &lt; 1 chuỗi hội tụ, D &gt; 1 chuỗi phân kỳ, và D = 1 thì tiêu chuẩn không cho kết luận.
+2.3. Quy trình Đánh giá, Chỉnh sửa và Tích hợp của bản thân
+Sau khi nhận được kết quả phản hồi từ ChatGPT, em tiến hành rà soát, kiểm chứng học thuật nghiêm túc cũng như chọn lọc các ý chính để thêm vào tài liệu ôn tập của mình :
+1: Đánh giá:
+* Về ưu điểm: Hệ thống câu trả lời của ChatGPT phản hồi rất chính xác bối cảnh câu lệnh. AI đã cung cấp một bộ khung kiến thức lý thuyết cực kỳ trực quan bao gồm: bảng tổng hợp các tiêu chuẩn cốt lõi (D&#x27;Alembert, Cauchy, So sánh trực tiếp, So sánh giới hạn), các chuỗi mẫu cần nhớ (Chuỗi hình học, chuỗi Riemann p) và mẹo nhận dạng nhanh dạng số hạng tổng quát un để chọn tiêu chuẩn phù hợp. Các điều kiện tiên quyết như chuỗi số dương (un &gt; 0) cũng được AI lưu ý rõ ràng.
+*Về nhược điểm/Điểm cần cải thiện: Phần &quot;Mẹo chọn tiêu chuẩn nhanh&quot; và &quot;Ví dụ nhận dạng&quot; của AI đưa ra công thức tính toán rất tắt dưới dạng sơ đồ tư duy ngắn. Ví dụ, ở bài toán xét chuỗi   AI chỉ ghi ngắn gọn là &quot;Xấp xỉ   dùng so sánh với chuỗi p&quot;. Lời giải này chỉ dừng ở mức gợi ý tư duy cho trắc nghiệm, nếu sinh viên bê nguyên văn vào bài thi tự luận Giải tích chắc chắn sẽ bị trừ điểm do thiếu các bước lập luận giới hạn và định lý so sánh giới hạn.
+2: Chỉnh sửa :
+* Em giữ nguyên cấu trúc bảng hệ thống rất khoa học của AI nhưng tiến hành bổ sung và viết chi tiết lại các ví dụ nhận dạng nhanh theo đúng văn phong tự luận toán học.
+- Ví dụ cụ thể (Chỉnh sửa lại ví dụ số 3 của AI): Thay vì ghi &quot;xấp xỉ&quot; như AI, em đã tự tay trình bày lại bằng cách chọn chuỗi so sánh  (chuỗi Riemann hội tụ với p = 2 &gt; 1), sau đó lập luận tìm giới hạn:
+Vì giới hạn   theo Tiêu chuẩn so sánh giới hạn, hai chuỗi cùng tính chất, suy ra chuỗi ban đầu hội tụ.
+3: Tích hợp (Integration):
+* Em đã tích hợp bảng so sánh các tiêu chuẩn của AI kết hợp cùng phần bài tập mẫu đã được em tự tay giải chi tiết vào ứng dụng ghi chú cá nhân. Tài liệu này được chuẩn hóa hoàn toàn về mặt ký hiệu toán học theo đúng giáo trình mà giảng viên cho trên lớp , tạo thành một cuốn cẩm nang tinh gọn nhưng đầy đủ để phục vụ cho giai đoạn ôn thi nước rút.
+2.4. Khai báo sử dụng AI một cách minh bạch
+Để đảm bảo tính liêm chính trong học thuật, tài liệu ôn tập của em được đính kèm phần khai báo minh bạch như sau:
+Tuyên bố về việc sử dụng AI trong học tập
+Công cụ hỗ trợ: Chat GPT (Truy cập và tương tác vào tháng 5/2026).
+Nội dung hỗ trợ: Sử dụng AI để lên cấu trúc khung các tiêu chuẩn hội tụ và cung cấp lời giải sơ bộ cho bài toán chuỗi lũy thừa nhằm mục đích đối chiếu kết quả.
+Phần việc của sinh viên: Đã tiến hành rà soát, phát hiện và sửa chữa các lỗi thiếu điều kiện biên của AI; bổ sung lập luận toán học theo định lý chuẩn trong giáo trình Giải tích 1 của ĐHQGHN; tự tay trình bày lại toàn bộ hệ thống tài liệu ôn tập để đảm bảo tính chính xác học thuật 100%.
+PHẦN 3: PHÂN TÍCH CÁC VẤN ĐỀ ĐẠO ĐỨC LIÊN QUAN TRONG HỌC THUẬT
+3.1. Ranh giới giữa hỗ trợ hợp lý và gian lận học thuật
+Đối với một môn học có tính logic và trừu tượng cao như Giải tích 1, ranh giới giữa việc mượn công nghệ để phát triển tư duy và việc lạm dụng nó để đối phó với thi cử là vô cùng mong manh.
+Hỗ trợ học tập hợp lý: Là cách em đã thực hiện trong nhật ký tương tác ở phần trên. Việc dùng ChatGPT để hệ thống lại các công thức cốt lõi, tìm kiếm mẹo phân loại dạng toán (như nhận biết dấu hiệu giai thừa $n!$ để dùng D&#x27;Alembert, hay số hạng phân thức để dùng tiêu chuẩn so sánh) hoàn toàn là một phương pháp học tập thông minh. AI đóng vai trò như một người &quot;trợ lý tóm tắt&quot;, giúp rút ngắn thời gian lật tìm giáo trình và định hình sơ đồ tư duy ôn tập nhanh chóng.
+Gian lận học thuật: Ngược lại, nếu trong quá trình làm bài tập lớn, bài kiểm tra điều kiện hoặc các bài tập về nhà trên hệ thống LMS, sinh viên chỉ chụp ảnh đề bài toán chuỗi, yêu cầu AI giải từ rồi sao chép nguyên văn lời giải bao gồm cả những chỗ AI làm tắt hoặc làm sai để nộp cho giảng viên mà không hề suy nghĩ, đó là hành vi gian lận. Lúc này, sinh viên đã biến AI thành kẻ thi hộ tức làm sai lệch mục đích sử dụng AI , vi phạm nghiêm trọng tính trung thực trong học tập.
+3.2. Vấn đề quyền sở hữu trí tuệ và trích dẫn
+Khi sử dụng các bảng hệ thống hay mẹo giải toán do ChatGPT cung cấp (như dữ liệu trong ảnh ảnh màn hình), em nhận thức được một vấn đề đạo đức lớn: AI không tự sinh ra tri thức.
+Toàn bộ các định lý về chuỗi Riemann, tiêu chuẩn Cauchy, D&#x27;Alembert đều là thành quả lao động của các nhà toán học vĩ đại trong lịch sử và được biên soạn lại bởi đội ngũ giảng viêncủa ĐHQGHN. ChatGPT chỉ thu thập, sắp xếp lại từ kho dữ liệu khổng lồ của nó. Do đó:
+Việc coi các bảng biểu, sơ đồ do AI xuất ra là sản phẩm tự thân của mình mà không khai báo nguồn gốc là một dạng đạo văn.
+AI là một mô hình máy học, không có tư cách pháp nhân hay tư cách tác giả. Do đó, khi em đưa các biểu đồ, bảng mẹo chọn tiêu chuẩn này vào tài liệu cá nhân hoặc bài tập, việc trích dẫn rõ ràng tên công cụ (ChatGPT) và mục đích sử dụng là bắt buộc để tôn trọng nguyên tắc sở hữu trí tuệ và minh bạch học thuật.
+3.3. Tác động đến quá trình học tập và phát triển kỹ năng
+Việc sử dụng ChatGPT để ôn thi Giải tích 1 mang lại cả những tác động tích cực lẫn tiêu cực mà một tân sinh viên UET cần nhìn nhận thẳng thắn:
+Tác động tích cực: Tối ưu hóa tốc độ ôn tập. Thay vì mất cả ngày để tự hệ thống 4-5 tiêu chuẩn hội tụ, AI cung cấp một bảng so sánh chỉ trong 5 giây, giúp sinh viên có nhiều thời gian hơn để thực hành giải đề (kỹ năng thực chiến quan trọng nhất để qua môn Giải tích).
+Tác động tiêu cực (Nguy cơ thui chột tư duy): Toán giải tích đòi hỏi tính chính xác tuyệt đối và khả năng lập luận chặt chẽ. Nếu sinh viên quá lạm dụng các &quot;mẹo nhận dạng nhanh&quot; hoặc các bước &quot;xấp xỉ toán học&quot; làm tắt của AI mà không qua giới hạn , họ sẽ mất đi khả năng lập luận logic từng bước. Khi bước vào phòng thi cuối kỳ - nơi không có internet và phải làm bài tự luận trên giấy, việc quen dựa dẫm vào AI sẽ khiến sinh viên gặp tình trạng rỗng kỹ năng, không thể tự mình trình bày một bài toán chuẩn chỉnh, dẫn đến kết quả thi cử không như lúc mình làm bài nhờ AI .
+4: BỘ NGUYÊN TẮC CÁ C NHÂN VỀ SỬ DỤNG AI CÓ TRÁCH NHIỆM
+Để đảm bảo việc sử dụng các công cụ trí tuệ nhân tạo luôn đi đúng quỹ đạo, hỗ trợ đắc lực cho việc học tập tại trường mà không làm suy giảm đạo đức học thuật, em tự xây dựng cho mình Bộ 6 nguyên tắc cá nhân cốt lõi sau:
+1. Nguyên tắc Minh bạch : Tuyệt đối không gian lận. Luôn chủ động khai báo rõ ràng, trung thực các đoạn Prompts và tên công cụ AI (ChatGPT/Gemini) ở mục tài liệu tham khảo trong mọi bài tập lớn hay báo cáo học thuật.
+2. Nguyên tắc Hoài nghi khoa học: Không bao giờ tin tưởng hoàn toàn vào kết quả của AI. Mọi công thức toán học, điều kiện áp dụng định lý  do AI đưa ra đều phải được đối chiếu, kiểm chứng lại bằng giáo trình Giải tích chuẩn của nhà trường trước khi áp dụng.
+3. Nguyên tắc Tự lực trước - Trợ lý sau: AI chỉ là người đồng hành, không phải người làm hộ. Đối với mỗi dạng bài tập Giải tích, bản thân phải tự vận dụng tư duy để tìm hướng giải tối thiểu 15 phút, chỉ khi gặp bế tắc mới dùng AI để gợi ý ý tưởng hoặc tìm lỗi sai.
+4. Nguyên tắc Chuyển hóa tri thức: Không bao giờ sao chép nguyên văn từ câu trả lời của AI. Phải dùng tư duy cá nhân để chuyển hóa văn phong máy tính thành văn phong tự luận toán học chặt chẽ, tự mình thực hiện lại các bước tính toán làm tắt của AI để biến kiến thức đó thành của bản thân.
+5. Nguyên tắc An toàn dữ liệu: Ý thức rõ về bảo mật thông tin công nghệ. Không chia sẻ, tải lên các mô hình AI công cộng các tài liệu học tập mang tính nội bộ, đề thi chính thức chưa được công bố của các kỳ thi tại UET.
+6. Nguyên tắc Trách nhiệm giải trình (Final Accountability): Ý thức được con người là chủ thể duy nhất chịu trách nhiệm học thuật. Sẵn sàng chịu mọi hình thức kỷ luật từ giảng viên và nhà trường nếu nội dung bài làm vi phạm lỗi đạo văn hoặc đưa ra thông tin sai lệch do lạm dụng AI.
+5: Inforgraphic
+https://canva.link/6odb3dzbnwuqk6w
